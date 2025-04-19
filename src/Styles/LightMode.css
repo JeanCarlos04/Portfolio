@@ -1,0 +1,158 @@
+:root {
+  --nav-bg: rgb(219, 228, 255);
+  --text: #2d2d2d;
+  --bg-buttons: #f2f2f2;
+  --borders: #2a2a2a;
+  --borders-article: #eeeeee;
+  --borders-btn: rgb(205, 218, 249);
+  --details-color: #1451b8;
+  --borders-nav: rgb(205, 218, 249);
+  --article-hoover-color: #b7b2f3;
+  --btns-backgroud: #d2cefa;
+  --white: #ffff;
+}
+
+body.light {
+  .anchorDiv {
+    background-color: var(--nav-bg);
+    border: solid 1px var(--borders-nav);
+  }
+
+  .anchorNav {
+    color: var(--text);
+  }
+
+  .anchorNav:hover {
+    color: rgb(51, 170, 255);
+  }
+
+  .laptopIcon {
+    color: var(--text);
+  }
+
+  .btnLightMode {
+    color: var(--text);
+  }
+
+  .btnDiv {
+    display: flex;
+    gap: 40px;
+  }
+
+  .icon-title {
+    color: var(--details-color);
+  }
+
+  .imgProfile {
+    border: solid 2px #dcdcdc;
+  }
+
+  .h1Name {
+    color: var(--text);
+  }
+
+  .paragraphPresentation {
+    color: var(--text);
+  }
+
+  .paragraphSpan {
+    color: var(--details-color);
+  }
+
+  .AnchorContact {
+    background-color: var(--nav-bg);
+    border: solid 1px var(--borders-btn);
+    color: var(--text);
+  }
+
+  .AnchorContact:hover {
+    background-color: var(--btns-backgroud);
+  }
+
+  .h1SectionTitle {
+    color: var(--text);
+  }
+
+  .articleprojects {
+    border: solid 2px var(--borders-article);
+    background-image: linear-gradient(rgb(255, 255, 255), rgb(233, 237, 251));
+  }
+
+  .articleprojects:hover {
+    border: solid 2px var(--article-hoover-color);
+  }
+
+  .projectTitle {
+    color: var(--text);
+  }
+
+  .projectAnchorCode {
+    background-color: var(--white);
+    border: solid 1px var(--borders-btn);
+    color: var(--text);
+  }
+
+  .projectAnchorCode:hover {
+    background-color: var(--btns-backgroud);
+  }
+
+  .projectDescription {
+    color: var(--text);
+  }
+
+  .tecnologieName {
+    color: var(--text);
+  }
+
+  .liExperience {
+    color: var(--text);
+  }
+
+  .p-Experiencie {
+    color: var(--text);
+  }
+
+  .p-aboutMe {
+    color: var(--text);
+  }
+
+  .spanAboutMe {
+    color: var(--details-color);
+  }
+
+  .articleSkillContainer {
+    border: solid 2px var(--borders-article);
+
+    background-image: linear-gradient(rgb(255, 255, 255), rgb(233, 237, 251));
+  }
+
+  .articleSkillContainer:hover {
+    border: solid 2px var(--article-hoover-color);
+  }
+
+  .titleSkills {
+    color: var(--text);
+  }
+
+  .gitDark {
+    color: var(--text);
+  }
+
+  .contactH1 {
+    color: var(--text);
+  }
+
+  .AnchorContactFooter {
+    background-color: var(--nav-bg);
+    border: solid 1px var(--borders-btn);
+    color: var(--text);
+  }
+
+  .AnchorContactFooter:hover {
+    background-color: var(--btns-backgroud);
+  }
+
+  .copyright-p {
+    color: var(--text);
+  }
+}

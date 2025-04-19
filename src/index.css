@@ -1,0 +1,48 @@
+@font-face {
+  font-family: Poppins;
+  src: url("/fonts/poppins400.woff2") format("woff2");
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Poppins;
+  src: url("/fonts/poppins500.woff2") format("woff2");
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Poppins;
+  src: url("/fonts/poppins600.woff2") format("woff2");
+  font-weight: 600;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Poppins;
+  src: url("/fonts/poppins700.woff2") format("woff2");
+  font-weight: 700;
+  font-display: swap;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Poppins, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+body.light {
+  background-color: white;
+  color: black;
+}
+
+body.dark {
+  background-image: linear-gradient(rgb(28, 28, 58), rgb(15, 14, 34));
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: white;
+}

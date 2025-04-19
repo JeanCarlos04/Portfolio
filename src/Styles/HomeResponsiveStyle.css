@@ -1,0 +1,176 @@
+/*MOBILE DESIGN*/
+
+@media (max-width: 796px) {
+  .navContainer .btnDiv {
+    position: fixed;
+    top: 70px;
+    left: -20px;
+  }
+}
+
+@media (max-width: 768px) {
+  main {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .navContainer {
+    position: fixed;
+    height: 70px;
+    width: 100vw;
+  }
+
+  .navContainer .btnDiv {
+    position: absolute;
+    top: 70px;
+    left: -20px;
+  }
+
+  .sectionPresentation {
+    flex-direction: column;
+    padding: 120px 0 0 0;
+  }
+
+  .divPresentation {
+    width: 100%;
+    align-items: center;
+  }
+
+  .anchorDiv {
+    padding: 8px 13px 8px 13px;
+    gap: 12px;
+  }
+
+  .AnchorContact {
+    font-size: 12px;
+    font-weight: 600;
+  }
+
+  .anchorNav {
+    font-size: 12px;
+    padding: 2px;
+  }
+
+  .laptopIcon {
+    font-size: 20px;
+  }
+
+  .paragraphPresentation {
+    text-align: center;
+    width: auto;
+  }
+
+  .btnsDiv {
+    gap: 8px;
+  }
+
+  .divprojects {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .articleprojects {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+  }
+
+  .projectImgDiv {
+    width: auto;
+  }
+
+  .projectImgs {
+    width: 100%;
+  }
+
+  .projectTitle {
+    font-size: 25px;
+    max-width: 180px;
+  }
+
+  .divArticleContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+  }
+
+  .divAboutMe {
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .p-aboutMe {
+    text-align: center;
+  }
+
+  .h1Name {
+    text-align: center;
+  }
+
+  .divContact {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .copyright-p {
+    text-align: center;
+  }
+}
+
+/*TABLETS DESIGN*/
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  main {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .navContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .btnDiv {
+    width: 90%;
+    display: flex;
+    gap: 40px;
+  }
+
+  .sectionPresentation {
+    padding: 120px 0 0 0;
+    flex-direction: column;
+  }
+
+  .divPresentation {
+    align-items: center;
+  }
+
+  .divprojects {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .articleprojects {
+    flex-direction: row;
+    height: auto;
+  }
+
+  .projectTitle {
+    font-size: 25px;
+    max-width: 180px;
+  }
+
+  .divTitle-Btn {
+    gap: 30px;
+  }
+
+  .projectDescription {
+    width: auto;
+  }
+
+  .AboutMeFoto {
+    height: 290px;
+  }
+}

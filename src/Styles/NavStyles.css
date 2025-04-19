@@ -1,0 +1,83 @@
+.navContainer {
+  max-width: 910px;
+  position: fixed;
+  height: 70px;
+  width: 100%;
+}
+
+.anchorDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  position: fixed;
+  padding: 0px 20px 0px 20px;
+  gap: 15px;
+  height: auto;
+  background-color: rgb(33, 40, 61);
+  border-radius: 50px;
+  border: solid 1px rgb(49, 54, 66);
+}
+
+.anchorNav {
+  font-display: swap;
+  width: auto;
+  display: flex;
+  padding: 10px;
+  white-space: nowrap;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  color: #f2f2f2;
+  transition: 0.3s;
+}
+
+.anchorNav:hover {
+  color: rgb(51, 170, 255);
+}
+
+.laptopIcon {
+  font-size: 25px;
+  color: #f2f2f2;
+}
+
+.btnLightMode {
+  font-display: swap;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-size: 25px;
+  background: transparent;
+  border-style: none;
+  color: #f2f2f2;
+  cursor: pointer;
+}
+
+.navContainer .btnDiv {
+  display: flex;
+  justify-content: end;
+}
+
+.btnDiv {
+  width: 100%;
+  display: flex;
+  gap: 40px;
+}
+
+.btnLanguageMode {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-size: 25px;
+  background: transparent;
+  border-style: none;
+  color: #f2f2f2;
+  cursor: pointer;
+}
+
+.imgLanguage {
+  width: 33px;
+  height: 23px;
+  border-radius: 3px;
+}
