@@ -16,7 +16,11 @@ export function Projects() {
         <img
           className="sectionTitleIcon"
           alt="Code Icon"
-          src={theme === "light" ? "/svg/icons/code-solid.svg" : "/svg/icons/code-yellow.svg"}
+          src={
+            theme === "light"
+              ? "/svg/icons/code-solid.svg"
+              : "/svg/icons/code-yellow.svg"
+          }
         />
       </h1>
       <div className="divprojects">

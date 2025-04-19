@@ -58,7 +58,7 @@ export function Nav() {
           <img
             className="imgLanguage"
             alt={language === "es" ? "Spain flag" : "United States flag"}
-            src={language === "es" ? "/svg/SpainFlag.webp" : "/svg/EEUU.webp"}
+            src={language === "es" ? "/svg/SpainFlag.webp" : "/svg/USA.webp"}
           />
         </button>
       </div>

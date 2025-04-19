@@ -112,6 +112,15 @@
     flex-direction: column;
   }
 
+  .divContactContainer {
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .divMadedWith {
+    padding: 0 0 10px 0;
+  }
+
   .copyright-p {
     text-align: center;
   }

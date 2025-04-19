@@ -11,58 +11,95 @@ export function Footer() {
   return (
     <footer id="footerSection" className="footerContainer">
       <div className="divContactContainer">
-        <h1 className="contactH1">
-          {T.footer.tituloSocials}{" "}
-          <img
-            className="sectionTitleIcon"
-            alt="At Icon"
-            src={
-              theme === "light"
-                ? "/svg/icons/at-solid.svg"
-                : "/svg/icons/at-yellow.svg"
-            }
-          />
-        </h1>
-        <div className="divContact">
-          <a
-            href="https://www.linkedin.com/in/jean-carlos-castillo-fernández-76a95633b/"
-            target="_blank"
-            className="AnchorContactFooter"
-          >
+        <nav className="footerNavContact">
+          <h2 className="contactH1">
+            {T.footer.tituloSocials}{" "}
             <img
-              className="anchorIcon"
-              alt="Linkedin Logo"
+              className="sectionTitleIcon"
+              alt="At Icon"
               src={
                 theme === "light"
-                  ? "/svg/icons/linkedinBlack.svg"
-                  : "/svg/icons/linkedinWhite.svg"
+                  ? "/svg/icons/at-solid.svg"
+                  : "/svg/icons/at-yellow.svg"
               }
             />
-            LinkendIn
-          </a>
-          <a
-            target="_blank"
-            href="https://github.com/JeanCarlos04"
-            className="AnchorContactFooter"
-          >
+          </h2>
+          <div className="divContact">
+            <a
+              href="https://www.linkedin.com/in/jean-carlos-castillo-fernández-76a95633b/"
+              target="_blank"
+              className="AnchorContactFooter"
+            >
+              <img
+                className="anchorIcon"
+                alt="Linkedin Logo"
+                src={
+                  theme === "light"
+                    ? "/svg/icons/linkedinBlack.svg"
+                    : "/svg/icons/linkedinWhite.svg"
+                }
+              />
+              LinkendIn
+            </a>
+            <a
+              target="_blank"
+              href="https://github.com/JeanCarlos04"
+              className="AnchorContactFooter"
+            >
+              <img
+                className="anchorIcon"
+                alt="Linkedin Logo"
+                src={
+                  theme === "light"
+                    ? "/svg/icons/github.svg"
+                    : "/svg/icons/githubWhite.svg"
+                }
+              />
+              Github
+            </a>
+          </div>
+          <address className="divInfoContact">
+            <p>jeancarloscastillofernandez@gmail.com</p>
+            <p>+1 829 749 0064</p>
+          </address>
+        </nav>
+        <div className="divMadedWith">
+          <h3 className="madedWithTitle">{T.footer.MadedWith}</h3>
+          <div className="divMadedWithIcons">
             <img
-              className="anchorIcon"
-              alt="Linkedin Logo"
-              src={
-                theme === "light"
-                  ? "/svg/icons/github.svg"
-                  : "/svg/icons/githubWhite.svg"
-              }
+              alt="Typescript Icon"
+              className="madedWithIcons"
+              src="/svg/icons/typescript.svg"
             />
-            Github
-          </a>
-        </div>
-        <div className="divInfoContact">
-          <p>jeancarloscastillofernandez@gmail.com</p>
-          <p>+1 829 749 0064</p>
+            <img
+              alt="JavaScript Icon"
+              className="madedWithIcons"
+              src="/svg/icons/javascript.svg"
+            />
+            <img
+              alt="React Icon"
+              className="madedWithIcons"
+              src="/svg/icons/react.svg"
+            />
+            <img
+              alt="Css Icon"
+              className="madedWithIcons"
+              src="/svg/icons/css.svg"
+            />
+            <img
+              alt="HTML icon"
+              className="madedWithIcons"
+              src="/svg/icons/html.svg"
+            />
+            <img
+              alt="Vite Icon"
+              className="madedWithIcons"
+              src="/svg/icons/vite.svg"
+            />
+          </div>
         </div>
       </div>
-      <p className="copyright-p">{T.footer.rights}</p>
+      <small className="copyright-p">{T.footer.rights}</small>
     </footer>
   );
 }

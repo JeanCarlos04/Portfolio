@@ -78,6 +78,6 @@
 
 .imgLanguage {
   width: 33px;
-  height: 23px;
+  height: auto;
   border-radius: 3px;
 }

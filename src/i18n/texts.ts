@@ -25,6 +25,7 @@ export const texts = {
     footer: {
       tituloSocials: "Sociales",
       rights: "© Jean Carlos Castillo. Sin derechos reservados",
+      MadedWith: "Hecho con",
     },
   },
   en: {
@@ -53,6 +54,7 @@ export const texts = {
     footer: {
       tituloSocials: "Socials",
       rights: "© Jean Carlos Castillo. No rights reserved.",
+      MadedWith: "Built with",
     },
   },
 };

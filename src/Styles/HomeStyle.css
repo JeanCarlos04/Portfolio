@@ -272,6 +272,9 @@ main .navContainer {
   color: #ffffff;
   font-size: 16px;
   line-height: 1.8;
+  padding: 12px;
+  background-color: #1e1d24;
+  border-radius: 10px;
 }
 
 .spanAboutMe {
@@ -282,7 +285,7 @@ main .navContainer {
 
 .AboutMeFoto {
   width: 250px;
-  height: 290px;
+  height: auto;
   border-radius: 25px;
 }
 
