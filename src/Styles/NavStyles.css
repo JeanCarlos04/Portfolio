@@ -3,9 +3,11 @@
   position: fixed;
   height: 70px;
   width: 100%;
+  z-index: 999;
 }
 
 .anchorDiv {
+  z-index: 999;
   display: flex;
   justify-content: center;
   align-items: center;

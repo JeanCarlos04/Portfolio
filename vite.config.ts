@@ -9,7 +9,7 @@ export default defineConfig({
     rollupOptions: {
       output: {
         manualChunks: {
-          projects: ["src/components/Projects/projects.data.ts"],
+          projects: ["src/dataComponents/projects.data.ts"],
           vendor: ["react", "react-dom"],
         },
       },

@@ -15,16 +15,6 @@ main .navContainer {
   align-items: center;
 }
 
-.projectIcons {
-  width: 20px;
-  height: 20px;
-}
-
-.anchorProjectIcon {
-  width: 20px;
-  height: 20px;
-}
-
 .sectionPresentation {
   max-width: 910px;
   width: 100%;
@@ -75,7 +65,8 @@ main .navContainer {
   gap: 20px;
 }
 
-.anchorIcon {
+.anchorIcon,
+.gmailIcon {
   width: 20px;
   height: 20px;
 }
@@ -222,6 +213,16 @@ main .navContainer {
   text-align: start;
 }
 
+.projectIcons {
+  width: 20px;
+  height: 20px;
+}
+
+.anchorProjectIcon {
+  width: 20px;
+  height: 20px;
+}
+
 .divTecnologieLogos {
   display: flex;
   width: auto;
@@ -238,28 +239,6 @@ main .navContainer {
   font-weight: 500;
   font-size: 14px;
   margin-left: 10px;
-}
-
-.ulExperience {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-  width: 100%;
-  height: auto;
-}
-
-.liExperience {
-  color: #ffffff;
-  font-size: 20px;
-  width: 100%;
-  margin-left: 21px;
-}
-
-.p-Experiencie {
-  color: #cdcdcd;
-  width: auto;
-  font-size: 17px;
-  font-weight: 500;
 }
 
 .divAboutMe {
@@ -289,70 +268,13 @@ main .navContainer {
   border-radius: 25px;
 }
 
-.articleSkillContainer {
-  width: auto;
-  height: auto;
-  background-color: #272727;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 50px;
-  border: solid 2px #222222;
-  padding: 30px;
-  border-radius: 10px;
-  background-image: linear-gradient(rgb(28, 29, 44), rgb(31, 29, 34));
-  transition: 0.2s;
-}
-
-.articleSkillContainer:hover {
-  border: solid 2px #393939;
-}
-
-.logoSkills {
-  width: 45px;
-  height: 45px;
-  display: flex;
-  justify-content: center;
-  transition: 0.3s;
-}
-
-.logoSkills:hover {
-  scale: 1.2;
-}
-
 .viteImg {
   width: 45px;
   height: 45px;
-}
-
-.sectionSkills {
-  max-width: 910px;
-  width: 100%;
-  height: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 45px;
 }
 
 .divArticleContainer {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 50px;
-}
-
-.titleSkillsContainer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 15px;
-}
-
-.titleSkills {
-  color: #ffffff;
-  font-weight: 600;
-  font-size: 25px;
-  display: flex;
-  align-items: center;
-  gap: 15px;
 }

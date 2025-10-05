@@ -43,6 +43,18 @@ export const frontendSkills: Skills[] = [
     color: "#3178C6",
     alt: "TypeScript",
   },
+  {
+    id: crypto.randomUUID(),
+    src: "/svg/icons/MongoDB.svg",
+    color: "#47A248",
+    alt: "MongoDB",
+  },
+  {
+    id: crypto.randomUUID(),
+    src: "/svg/icons/Node.js.svg",
+    color: "#47A248",
+    alt: "NodeJS",
+  },
 ];
 
 export const tools: Skills[] = [

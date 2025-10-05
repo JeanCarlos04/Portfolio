@@ -46,8 +46,8 @@ export function Home() {
           <div className="btnsDiv">
             <a href="#footerSection" className="AnchorContact">
               <img
-                className="anchorIcon"
-                alt="Linkedin Logo"
+                className="gmailIcon"
+                alt="Gmail Logo"
                 src={
                   theme === "light"
                     ? "/svg/icons/gmail-Black.svg"
@@ -79,7 +79,7 @@ export function Home() {
             >
               <img
                 className="anchorIcon"
-                alt="Linkedin Logo"
+                alt="Github Logo"
                 src={
                   theme === "light"
                     ? "/svg/icons/github.svg"

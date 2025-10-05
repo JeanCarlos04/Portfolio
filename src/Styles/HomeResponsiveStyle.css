@@ -8,10 +8,10 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   main {
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   .navContainer {
@@ -34,6 +34,11 @@
   .divPresentation {
     width: 100%;
     align-items: center;
+  }
+
+  .gmailIcon {
+    width: 16px;
+    height: 16px;
   }
 
   .anchorDiv {
@@ -61,7 +66,7 @@
   }
 
   .btnsDiv {
-    gap: 8px;
+    gap: 12px;
   }
 
   .divprojects {
@@ -91,7 +96,7 @@
   .divArticleContainer {
     display: flex;
     flex-direction: column;
-    gap: 70px;
+    gap: 40px;
   }
 
   .divAboutMe {

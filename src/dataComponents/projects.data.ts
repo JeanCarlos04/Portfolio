@@ -15,10 +15,7 @@ type Projects = {
 export const projects: Projects[] = [
   {
     id: crypto.randomUUID(),
-    img: [
-      { name: "MovieSoftIndex", src: "/svg/MovieSoftIndex.webp" },
-      // { name: "MovieSoftLogo", src: "/svg/MovieSofLogo.webp" },
-    ],
+    img: [{ name: "MovieSoftIndex", src: "/svg/MovieSoftIndex.webp" }],
     title: "MovieSoft",
     description:
       "Plataforma web donde puedes explorar las carteleras y ver sus tráilers favoritos. Registrate!.",
@@ -38,11 +35,7 @@ export const projects: Projects[] = [
   },
   {
     id: crypto.randomUUID(),
-    img: [
-      { name: "PokeDexIndex", src: "/svg/PokeDexIndex.webp" },
-      // { name: "PokeDexCard1", src: "/svg/PokeDexPokemonCard.webp" },
-      // { name: "PokeDexCard2", src: "/svg/PokeDexPokemonCard2.webp" },
-    ],
+    img: [{ name: "PokeDexIndex", src: "/svg/PokeDexIndex.webp" }],
     title: "PokéDex",
     description:
       "Explora y aprende sobre todos los Pokémon, sus habilidades, evoluciones, tipos y mucho más.",
@@ -63,7 +56,6 @@ export const projects: Projects[] = [
     id: crypto.randomUUID(),
     img: [
       { name: "MiniGameMemoryMatch", src: "/svg/MiniGameMemoryMatch.webp" },
-      // { name: "MiniGameScrumble", src: "/svg/MiniGameScrumble.webp" },
     ],
     title: "Mini Games",
     description:
@@ -82,5 +74,48 @@ export const projects: Projects[] = [
       { logo: "/svg/icons/css.svg", name: "CSS", color: "#1572B6" },
     ],
     code: "https://github.com/JeanCarlos04/MiniGames/tree/main/mini-games",
+  },
+  {
+    id: crypto.randomUUID(),
+    img: [{ name: "JMusic", src: "/svg/Jmusic.webp" }],
+    title: "JMusics",
+    description:
+      "JMusic es una plataforma moderna donde puedes buscar tus canciones favoritas, crear y gestionar playlists personalizadas con una interfaz intuitiva y fluida.",
+    descriptionEN:
+      "JMusic is a modern platform where you can search for your favorite songs and create or manage personalized playlists, all within an intuitive and smooth interface.",
+    tecnologies: [
+      { logo: "/svg/icons/react.svg", name: "React", color: "#61DAFB" },
+      {
+        logo: "/svg/icons/typescript.svg",
+        name: "TypeScript",
+        color: "#3178C6",
+      },
+      { logo: "/svg/icons/html.svg", name: "HTML", color: "#E34F26" },
+      { logo: "/svg/icons/tailwind.svg", name: "Tailwind", color: "#38BDF8" },
+      { logo: "/svg/icons/css.svg", name: "CSS", color: "#1572B6" },
+    ],
+    code: "https://github.com/JeanCarlos04/JMusic",
+  },
+  {
+    id: crypto.randomUUID(),
+    img: [{ name: "FlowUp", src: "/svg/FlowUp.webp" }],
+    title: "FlowUp",
+    description:
+      "FlowUp es una red social moderna donde puedes subir posts, explorar perfiles, seguir a otros usuarios, dar likes y comentar. Con FlowUp, mantente conectado y comparte lo que te apasiona de manera fácil e interactiva.",
+    descriptionEN:
+      "FlowUp is a modern social network where you can post content, explore profiles, follow other users, like, and comment. With FlowUp, stay connected and share what you’re passionate about easily and interactively.",
+    tecnologies: [
+      { logo: "/svg/icons/react.svg", name: "React", color: "#61DAFB" },
+      {
+        logo: "/svg/icons/typescript.svg",
+        name: "TypeScript",
+        color: "#3178C6",
+      },
+      { logo: "/svg/icons/html.svg", name: "HTML", color: "#E34F26" },
+      { logo: "/svg/icons/css.svg", name: "CSS", color: "#1572B6" },
+      { logo: "/svg/icons/MongoDB.svg", name: "MongoDB", color: "#47A248" },
+      { logo: "/svg/icons/Node.js.svg", name: "NodeJS", color: "#47A248" },
+    ],
+    code: "https://github.com/JeanCarlos04/FlowUpRepository",
   },
 ];

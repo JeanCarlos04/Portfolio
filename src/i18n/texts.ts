@@ -18,7 +18,7 @@ export const texts = {
     },
 
     skills: {
-      habilidadesFrontend: "Frontend",
+      habilidadesFrontend: "Tecnologías",
       herramientas: "Herramientas",
     },
 
@@ -47,7 +47,7 @@ export const texts = {
     },
 
     skills: {
-      habilidadesFrontend: "Frontend",
+      habilidadesFrontend: "Tecnologies",
       herramientas: "Tools",
     },
 

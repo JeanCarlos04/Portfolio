@@ -1,0 +1,21 @@
+.ulExperience {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 100%;
+  height: auto;
+}
+
+.liExperience {
+  color: #ffffff;
+  font-size: 20px;
+  width: 100%;
+  margin-left: 21px;
+}
+
+.p-Experience {
+  color: #cdcdcd;
+  width: auto;
+  font-size: 17px;
+  font-weight: 500;
+}

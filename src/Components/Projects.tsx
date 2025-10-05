@@ -2,7 +2,7 @@ import { useContext } from "react";
 import { texts } from "../i18n/texts";
 import { LanguageContext } from "../Context/LanguageContext";
 import { ThemeContext } from "../Context/ThemeContext";
-import { projects } from "../dataComponents/projects.data";
+import { projects } from "../dataComponents/projects.data.ts";
 
 export function Projects() {
   const { theme } = useContext(ThemeContext);
