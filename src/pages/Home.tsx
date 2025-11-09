@@ -21,7 +21,7 @@ export function Home() {
       <Nav />
       <section className="sectionPresentation">
         <img
-          src="/svg/FotoPersonal.webp"
+          src="/Portfolio/svg/FotoPersonal.webp"
           alt="Image photo about me"
           className="imgProfile"
         />
@@ -30,7 +30,7 @@ export function Home() {
           {language === "es" ? (
             <p className="paragraphPresentation">
               Ingeniero de software con{" "}
-              <span className="paragraphSpan"> 1 año de experiencia</span>{" "}
+              <span className="paragraphSpan"> 2 año de experiencia</span>{" "}
               desarrollando aplicaciones web. Apasionado por la tecnología y los
               nuevos avances en el área.
             </p>
@@ -50,8 +50,8 @@ export function Home() {
                 alt="Gmail Logo"
                 src={
                   theme === "light"
-                    ? "/svg/icons/gmail-Black.svg"
-                    : "/svg/icons/gmail-white.svg"
+                    ? "/Portfolio/svg/icons/gmail-Black.svg"
+                    : "/Portfolio/svg/icons/gmail-white.svg"
                 }
               />
               {T.home.botonContactame}
@@ -66,8 +66,8 @@ export function Home() {
                 alt="Linkedin Logo"
                 src={
                   theme === "light"
-                    ? "/svg/icons/linkedinBlack.svg"
-                    : "/svg/icons/linkedinWhite.svg"
+                    ? "/Portfolio/svg/icons/linkedinBlack.svg"
+                    : "/Portfolio/svg/icons/linkedinWhite.svg"
                 }
               />
               LinkendIn{" "}
@@ -82,8 +82,8 @@ export function Home() {
                 alt="Github Logo"
                 src={
                   theme === "light"
-                    ? "/svg/icons/github.svg"
-                    : "/svg/icons/githubWhite.svg"
+                    ? "/Portfolio/svg/icons/github.svg"
+                    : "/Portfolio/svg/icons/githubWhite.svg"
                 }
               />
               Github
@@ -104,8 +104,8 @@ export function Home() {
             alt="User Icon"
             src={
               theme === "light"
-                ? "/svg/icons/user.svg"
-                : "/svg/icons/user-yellow.svg"
+                ? "/Portfolio/svg/icons/user.svg"
+                : "/Portfolio/svg/icons/user-yellow.svg"
             }
           />
         </h1>
@@ -152,7 +152,7 @@ export function Home() {
           <img
             className="AboutMeFoto"
             alt="An image about me"
-            src="/svg/AboutMeFoto.webp"
+            src="/Portfolio/svg/AboutMeFoto.webp"
           />
         </div>
       </section>

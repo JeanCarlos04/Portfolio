@@ -13,14 +13,20 @@ export const experience: Experience[] = [
   },
   {
     id: crypto.randomUUID(),
-    text: "Estudiante de ingeniería de software en el Instituto Tecnologico de las Americas por 2 años",
+    text: "Graduado como estudiante de desarrollo de software en el Instituto Tecnologico de las Americas (ITLA).",
     textEN:
-      "Software engineering student at the Instituto Tecnologico de las Americas for 2 years.",
+      "Graduated as a software development student at the Instituto Tecnológico de las Américas (ITLA).",
   },
   {
     id: crypto.randomUUID(),
     text: "He realizado multiples proyectos con tecnologías front-end como React, Tailwind, JavaScript, Typescript, HTML, CSS, Vite",
     textEN:
       "I have completed multiple projects using front-end technologies such as React, Tailwind, JavaScript, Typescript, HTML, CSS, Vite.",
+  },
+  {
+    id: crypto.randomUUID(),
+    text: "Realicé una pasantía como desarrollador frontend en Soluciones Empresariales Dualsoft SRL, participando en el desarrollo, optimización de interfaces web, así como en la creación de documentación APIs.",
+    textEN:
+      "I completed a frontend developer internship at Soluciones Empresariales Dualsoft SRL, contributing to the development and optimization of web interfaces, as well as the creation of API documentation.",
   },
 ];

@@ -56,15 +56,45 @@
   cursor: pointer;
 }
 
+.btnLightMode {
+  font-display: swap;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-size: 25px;
+  background: transparent;
+  border-style: none;
+  color: #f2f2f2;
+  cursor: pointer;
+}
+
 .navContainer .btnDiv {
   display: flex;
   justify-content: end;
 }
 
 .btnDiv {
-  width: 100%;
+  position: absolute;
+  right: 0;
   display: flex;
-  gap: 40px;
+  gap: 25px;
+  animation: animationBackground 1s ease both;
+  animation-timeline: scroll(root);
+  animation-range: 0 200px;
+  padding: 8px;
+  padding-inline: 14px;
+  border-radius: 50px;
+}
+
+@keyframes animationBackground {
+  from {
+    background-color: transparent;
+    border-style: none;
+  }
+
+  to {
+    background-color: rgb(33, 40, 61);
+  }
 }
 
 .btnLanguageMode {

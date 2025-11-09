@@ -28,8 +28,8 @@ export function Nav() {
           alt="Laptop icon"
           src={
             theme === "light"
-              ? "/svg/icons/laptop-code-solid.svg"
-              : "/svg/icons/laptopWhite.svg"
+              ? "/Portfolio/svg/icons/laptop-code-solid.svg"
+              : "/Portfolio/svg/icons/laptopWhite.svg"
           }
         />
       </div>
@@ -45,8 +45,8 @@ export function Nav() {
             alt="Moon icon"
             src={
               theme === "light"
-                ? "/svg/icons/moon-solid.svg"
-                : "/svg/icons/sun-solid.svg"
+                ? "/Portfolio/svg/icons/moon-solid.svg"
+                : "/Portfolio/svg/icons/sun-solid.svg"
             }
           />
         </button>
@@ -58,7 +58,7 @@ export function Nav() {
           <img
             className="imgLanguage"
             alt={language === "es" ? "Spain flag" : "United States flag"}
-            src={language === "es" ? "/svg/SpainFlag.webp" : "/svg/USA.webp"}
+            src={language === "es" ? "/Portfolio/svg/SpainFlag.webp" : "/Portfolio/svg/USA.webp"}
           />
         </button>
       </div>

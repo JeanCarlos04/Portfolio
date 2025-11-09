@@ -17,8 +17,8 @@ export function Experience() {
           className="sectionTitleIcon"
           src={
             theme === "light"
-              ? "/svg/icons/briefcase.svg"
-              : "/svg/icons/briefcase-yellow.svg"
+              ? "/Portfolio/svg/icons/briefcase.svg"
+              : "/Portfolio/svg/icons/briefcase-yellow.svg"
           }
         />
       </h1>

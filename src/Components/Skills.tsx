@@ -18,8 +18,8 @@ export function Skills() {
           alt="Star Icon"
           src={
             theme === "light"
-              ? "/svg/icons/star-solid.svg"
-              : "/svg/icons/star-yellow.svg"
+              ? "/Portfolio/svg/icons/star-solid.svg"
+              : "/Portfolio/svg/icons/star-yellow.svg"
           }
         />
       </h1>

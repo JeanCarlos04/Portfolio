@@ -19,8 +19,8 @@ export function Footer() {
               alt="At Icon"
               src={
                 theme === "light"
-                  ? "/svg/icons/at-solid.svg"
-                  : "/svg/icons/at-yellow.svg"
+                  ? "/Portfolio/svg/icons/at-solid.svg"
+                  : "/Portfolio/svg/icons/at-yellow.svg"
               }
             />
           </h2>
@@ -35,8 +35,8 @@ export function Footer() {
                 alt="Linkedin Logo"
                 src={
                   theme === "light"
-                    ? "/svg/icons/linkedinBlack.svg"
-                    : "/svg/icons/linkedinWhite.svg"
+                    ? "/Portfolio/svg/icons/linkedinBlack.svg"
+                    : "/Portfolio/svg/icons/linkedinWhite.svg"
                 }
               />
               LinkendIn
@@ -51,8 +51,8 @@ export function Footer() {
                 alt="Linkedin Logo"
                 src={
                   theme === "light"
-                    ? "/svg/icons/github.svg"
-                    : "/svg/icons/githubWhite.svg"
+                    ? "/Portfolio/svg/icons/github.svg"
+                    : "/Portfolio/svg/icons/githubWhite.svg"
                 }
               />
               Github
@@ -69,32 +69,32 @@ export function Footer() {
             <img
               alt="Typescript Icon"
               className="madedWithIcons"
-              src="/svg/icons/typescript.svg"
+              src="/Portfolio/svg/icons/typescript.svg"
             />
             <img
               alt="JavaScript Icon"
               className="madedWithIcons"
-              src="/svg/icons/javascript.svg"
+              src="/Portfolio/svg/icons/javascript.svg"
             />
             <img
               alt="React Icon"
               className="madedWithIcons"
-              src="/svg/icons/react.svg"
+              src="/Portfolio/svg/icons/react.svg"
             />
             <img
               alt="Css Icon"
               className="madedWithIcons"
-              src="/svg/icons/css.svg"
+              src="/Portfolio/svg/icons/css.svg"
             />
             <img
               alt="HTML icon"
               className="madedWithIcons"
-              src="/svg/icons/html.svg"
+              src="/Portfolio/svg/icons/html.svg"
             />
             <img
               alt="Vite Icon"
               className="madedWithIcons"
-              src="/svg/icons/vite.svg"
+              src="/Portfolio/svg/icons/vite.svg"
             />
           </div>
         </div>

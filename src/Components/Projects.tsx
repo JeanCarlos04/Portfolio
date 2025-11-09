@@ -18,8 +18,8 @@ export function Projects() {
           alt="Code Icon"
           src={
             theme === "light"
-              ? "/svg/icons/code-solid.svg"
-              : "/svg/icons/code-yellow.svg"
+              ? "/Portfolio/svg/icons/code-solid.svg"
+              : "/Portfolio/svg/icons/code-yellow.svg"
           }
         />
       </h1>
@@ -55,8 +55,8 @@ export function Projects() {
                       alt="Github Logo"
                       src={
                         theme === "light"
-                          ? "/svg/icons/github.svg"
-                          : "/svg/icons/githubWhite.svg"
+                          ? "/Portfolio/svg/icons/github.svg"
+                          : "/Portfolio/svg/icons/githubWhite.svg"
                       }
                     />
                     Code

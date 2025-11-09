@@ -17,7 +17,7 @@ type ThemeContextProp = { children: React.ReactNode };
 const ThemeContext = createContext(defaultContext);
 
 const ThemeContextProvider = ({ children }: ThemeContextProp) => {
-  const [theme, setTheme] = useState<Theme>("light");
+  const [theme, setTheme] = useState<Theme>("dark");
 
   useEffect(() => {
     document.body.classList.remove("light", "dark");

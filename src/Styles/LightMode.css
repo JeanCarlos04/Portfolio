@@ -13,6 +13,17 @@
   --aboutMeBackground: #edf1fc;
 }
 
+@keyframes backgroundWhite {
+  from {
+    background-color: transparent;
+    border-style: none;
+  }
+
+  to {
+    background-color: var(--nav-bg);
+  }
+}
+
 body.light {
   .anchorDiv {
     background-color: var(--nav-bg);
@@ -37,7 +48,10 @@ body.light {
 
   .btnDiv {
     display: flex;
-    gap: 40px;
+    gap: 25px;
+    animation: backgroundWhite 1s ease both;
+    animation-timeline: scroll(root);
+    animation-range: 0 200px;
   }
 
   .icon-title {
@@ -155,5 +169,17 @@ body.light {
 
   .copyright-p {
     color: var(--text);
+  }
+
+  @media (min-width: 768px) and (max-width: 1023px) {
+    .btnDiv {
+      animation: none;
+    }
+  }
+
+  @media (max-width: 767px) {
+    .btnDiv {
+      animation: none;
+    }
   }
 }
