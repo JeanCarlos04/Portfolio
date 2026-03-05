@@ -56,18 +56,6 @@
   cursor: pointer;
 }
 
-.btnLightMode {
-  font-display: swap;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  font-size: 25px;
-  background: transparent;
-  border-style: none;
-  color: #f2f2f2;
-  cursor: pointer;
-}
-
 .navContainer .btnDiv {
   display: flex;
   justify-content: end;

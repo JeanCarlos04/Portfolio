@@ -91,7 +91,7 @@ main .navContainer {
 }
 
 .AnchorContact:hover {
-  background-color: #1f6170;
+  background-color: #1f3d70;
   transform: scale(1.1);
 }
 
@@ -115,7 +115,7 @@ main .navContainer {
 .h1SectionTitle {
   width: 100%;
   display: flex;
-  gap: 18px;
+  gap: 14px;
   align-items: center;
   justify-content: start;
   color: #ffffff;
@@ -202,7 +202,7 @@ main .navContainer {
 }
 
 .projectAnchorCode:hover {
-  background-color: #1f6170;
+  background-color: #1f3d70;
   transform: scale(1.1);
 }
 

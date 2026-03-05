@@ -1,20 +1,17 @@
-// import { FaLinkedin, FaGithub, FaUserCheck, FaEnvelope } from "react-icons/fa";
 import { Nav } from "../Components/Nav";
 import { Footer } from "../Components/Footer";
 import { Projects } from "../Components/Projects";
 import { Experience } from "../Components/Experience";
 import { Skills } from "../Components/Skills";
 import { useContext } from "react";
-import { texts } from "../i18n/texts";
-import { LanguageContext } from "../Context/LanguageContext";
+import { useTranslation } from "react-i18next";
 import { ThemeContext } from "../Context/ThemeContext";
+import i18n from "../config/i18next.config";
+import WhatsappBtn from "../Components/WhatsappBtn";
 
 export function Home() {
+  const { t } = useTranslation();
   const { theme } = useContext(ThemeContext);
-  const { language } = useContext(LanguageContext);
-  const T = texts[language];
-
-  console.log("renderizado!");
 
   return (
     <main>
@@ -27,17 +24,18 @@ export function Home() {
         />
         <div className="divPresentation">
           <h1 className="h1Name">Jean C. Castillo Fernández</h1>
-          {language === "es" ? (
+
+          {i18n.language === "es" ? (
             <p className="paragraphPresentation">
-              Ingeniero de software con{" "}
-              <span className="paragraphSpan"> 2 año de experiencia</span>{" "}
+              Ingeniero de software con
+              <span className="paragraphSpan"> 3 años de experiencia </span>
               desarrollando aplicaciones web. Apasionado por la tecnología y los
               nuevos avances en el área.
             </p>
           ) : (
             <p className="paragraphPresentation">
-              Software engineer with{" "}
-              <span className="paragraphSpan">1 year of experience</span>{" "}
+              Software engineer with
+              <span className="paragraphSpan"> 3 years of experience </span>
               developing web applications. Passionate about technology and the
               new advances in the field.
             </p>
@@ -54,10 +52,10 @@ export function Home() {
                     : "/Portfolio/svg/icons/gmail-white.svg"
                 }
               />
-              {T.home.botonContactame}
+              {t("home.botonContactame")}
             </a>
             <a
-              href="https://www.linkedin.com/in/jean-carlos-castillo-fernández-76a95633b/"
+              href="https://www.linkedin.com/in/jean-carlos-castillo-fernandez-76a95633b/"
               target="_blank"
               className="AnchorContact"
             >
@@ -98,7 +96,7 @@ export function Home() {
 
       <section id="sectionAboutMe" className="sectionContainer">
         <h1 className="h1SectionTitle">
-          {T.home.tituloSobreMi}{" "}
+          {t("home.tituloSobreMi")}{" "}
           <img
             className="sectionTitleIcon"
             alt="User Icon"
@@ -110,17 +108,17 @@ export function Home() {
           />
         </h1>
         <div className="divAboutMe">
-          {language === "es" ? (
+          {i18n.language === "es" ? (
             <p className="p-aboutMe">
               Me llamo Jean Carlos Castillo Fernández,
               <span className="spanAboutMe">
                 {" "}
-                estudiante de ingeriería de software
+                estudiante de ingeniería de software
               </span>{" "}
               en el Instituto Técnologico de las Americas ITLA . Me especializo
               en el{" "}
               <span className="spanAboutMe">
-                desarrollo de aplicaciones web, con 1 año de experiencia
+                desarrollo de aplicaciones web, con 2 años de experiencia
               </span>{" "}
               en dicha área.
               <br />
@@ -137,7 +135,7 @@ export function Home() {
               <span className="spanAboutMe">software engineering student</span>{" "}
               at the Instituto Tecnológico de las Americas ITLA. I specialize in{" "}
               <span className="spanAboutMe">
-                web application development, with 1 year of experience
+                web application development, with 2 years of experience
               </span>{" "}
               in this field.
               <br />
@@ -157,6 +155,7 @@ export function Home() {
         </div>
       </section>
 
+      <WhatsappBtn />
       <Footer />
     </main>
   );

@@ -1,17 +1,17 @@
 import { useContext } from "react";
-import { texts } from "../i18n/texts";
-import { LanguageContext } from "../Context/LanguageContext";
 import { experience } from "../dataComponents/experience.data";
 import { ThemeContext } from "../Context/ThemeContext";
+import { useTranslation } from "react-i18next";
+import i18n from "../config/i18next.config";
+
 export function Experience() {
   const { theme } = useContext(ThemeContext);
-  const { language } = useContext(LanguageContext);
-  const T = texts[language];
+  const { t } = useTranslation();
 
   return (
     <section id="sectionExperience" className="sectionContainer">
       <h1 className="h1SectionTitle">
-        {T.home.tituloExperiencia}{" "}
+        {t("home.tituloExperiencia")}{" "}
         <img
           alt="Suitcase Icon"
           className="sectionTitleIcon"
@@ -26,10 +26,10 @@ export function Experience() {
         {experience.map((descriptions) => {
           return (
             <li className="liExperience" key={descriptions.id}>
-              {language === "es" ? (
-                <p className="p-Experiencie">{descriptions.text}</p>
+              {i18n.language === "es" ? (
+                <p className="p-Experience">{descriptions.text}</p>
               ) : (
-                <p className="p-Experiencie">{descriptions.textEN}</p>
+                <p className="p-Experience">{descriptions.textEN}</p>
               )}
             </li>
           );

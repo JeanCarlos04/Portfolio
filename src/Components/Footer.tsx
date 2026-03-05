@@ -1,19 +1,21 @@
 import { useContext } from "react";
-import { texts } from "../i18n/texts";
-import { LanguageContext } from "../Context/LanguageContext";
 import { ThemeContext } from "../Context/ThemeContext";
+import { useTranslation } from "react-i18next";
 
 export function Footer() {
   const { theme } = useContext(ThemeContext);
-  const { language } = useContext(LanguageContext);
-  const T = texts[language];
+  const { t } = useTranslation();
+
+  const footerMadedWith = (alt: string, imageURL: string) => {
+    return <img alt={alt} className="madedWithIcons" src={imageURL} />;
+  };
 
   return (
     <footer id="footerSection" className="footerContainer">
       <div className="divContactContainer">
         <nav className="footerNavContact">
           <h2 className="contactH1">
-            {T.footer.tituloSocials}{" "}
+            {t("footer.tituloSocials")}{" "}
             <img
               className="sectionTitleIcon"
               alt="At Icon"
@@ -64,42 +66,24 @@ export function Footer() {
           </address>
         </nav>
         <div className="divMadedWith">
-          <h3 className="madedWithTitle">{T.footer.MadedWith}</h3>
+          <h3 className="madedWithTitle">{t("footer.MadedWith")}</h3>
           <div className="divMadedWithIcons">
-            <img
-              alt="Typescript Icon"
-              className="madedWithIcons"
-              src="/Portfolio/svg/icons/typescript.svg"
-            />
-            <img
-              alt="JavaScript Icon"
-              className="madedWithIcons"
-              src="/Portfolio/svg/icons/javascript.svg"
-            />
-            <img
-              alt="React Icon"
-              className="madedWithIcons"
-              src="/Portfolio/svg/icons/react.svg"
-            />
-            <img
-              alt="Css Icon"
-              className="madedWithIcons"
-              src="/Portfolio/svg/icons/css.svg"
-            />
-            <img
-              alt="HTML icon"
-              className="madedWithIcons"
-              src="/Portfolio/svg/icons/html.svg"
-            />
-            <img
-              alt="Vite Icon"
-              className="madedWithIcons"
-              src="/Portfolio/svg/icons/vite.svg"
-            />
+            {footerMadedWith(
+              "Typescript Icon",
+              "/Portfolio/svg/icons/typescript.svg",
+            )}
+            {footerMadedWith(
+              "JavaScript Icon",
+              "/Portfolio/svg/icons/javascript.svg",
+            )}
+            {footerMadedWith("React Icon", "/Portfolio/svg/icons/react.svg")}
+            {footerMadedWith("Css Icon", "/Portfolio/svg/icons/css.svg")}
+            {footerMadedWith("HTML icon", "/Portfolio/svg/icons/html.svg")}
+            {footerMadedWith("Vite Icon", "/Portfolio/svg/icons/vite.svg")}
           </div>
         </div>
       </div>
-      <small className="copyright-p">{T.footer.rights}</small>
+      <small className="copyright-p">{t("footer.rights")}</small>
     </footer>
   );
 }

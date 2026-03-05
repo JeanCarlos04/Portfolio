@@ -26,7 +26,6 @@
   font-display: swap;
 }
 
-
 * {
   margin: 0;
   padding: 0;
@@ -40,7 +39,7 @@ body.light {
 }
 
 body.dark {
-  background-image: linear-gradient(rgb(28, 28, 58), rgb(15, 14, 34));
+  background-image: linear-gradient(rgb(4, 6, 15), rgb(15, 14, 34));
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;

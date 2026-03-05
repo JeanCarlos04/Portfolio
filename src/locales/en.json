@@ -1,0 +1,30 @@
+{
+  "nav": {
+    "anchorExperiencia": "Experience",
+    "anchorProyectos": "Projects",
+    "anchorSobreMi": "About Me",
+    "anchorContactame": "Contact Me"
+  },
+  "home": {
+    "presentationMessage": "Software engineer with 2 years of experience developing web applications. Passionate about technology and the new advances in the field.",
+    "name": "Jean C. Castillo Fernández",
+    "botonContactame": "Contact Me",
+    "botonLinkedin": "LinkedIn",
+    "botonGithub": "GitHub",
+    "tituloExperiencia": "Experience",
+    "tituloProyectos": "Projects",
+    "tituloHabilidades": "Skills",
+    "tituloSobreMi": "About Me"
+  },
+
+  "skills": {
+    "habilidadesFrontend": "Tecnologies",
+    "herramientas": "Tools"
+  },
+
+  "footer": {
+    "tituloSocials": "Socials",
+    "rights": "© Jean Carlos Castillo. No rights reserved.",
+    "MadedWith": "Built with"
+  }
+}

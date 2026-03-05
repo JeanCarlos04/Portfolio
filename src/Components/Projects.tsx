@@ -1,18 +1,17 @@
 import { useContext } from "react";
-import { texts } from "../i18n/texts";
-import { LanguageContext } from "../Context/LanguageContext";
 import { ThemeContext } from "../Context/ThemeContext";
 import { projects } from "../dataComponents/projects.data.ts";
+import { useTranslation } from "react-i18next";
+import i18n from "../config/i18next.config.ts";
 
 export function Projects() {
   const { theme } = useContext(ThemeContext);
-  const { language } = useContext(LanguageContext);
-  const T = texts[language];
+  const { t } = useTranslation();
 
   return (
     <section id="sectionProjects" className="sectionContainer">
       <h1 className="h1SectionTitle">
-        {T.home.tituloProyectos}{" "}
+        {t("home.tituloProyectos")}{" "}
         <img
           className="sectionTitleIcon"
           alt="Code Icon"
@@ -62,7 +61,7 @@ export function Projects() {
                     Code
                   </a>
                 </div>
-                {language === "es" ? (
+                {i18n.language === "es" ? (
                   <p className="projectDescription">{project.description}</p>
                 ) : (
                   <p className="projectDescription">{project.descriptionEN}</p>

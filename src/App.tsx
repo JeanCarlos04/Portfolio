@@ -5,6 +5,7 @@ import "./Styles/HomeResponsiveStyle.css";
 import "./Styles/LightMode.css";
 import { Home } from "./pages/Home";
 
+import "./Styles/ComponentStyles/WhatSappBtn.css";
 import "./Styles/ComponentStyles/ExperienceStyle.css";
 import "./Styles/ComponentStyles/SkillStyles.css";
 import "./Styles/Animation.css";

@@ -1,0 +1,82 @@
+.whatsAppBtnContainer {
+  position: fixed;
+  right: 30px;
+  bottom: 20px;
+  cursor: pointer;
+  border-radius: 100%;
+  animation: appear 1s both;
+}
+
+.whatsappLayout {
+  position: absolute;
+  right: 30px;
+  bottom: 20px;
+  z-index: 1;
+  width: 51px;
+  height: 51px;
+  animation-timeline: scroll(root);
+  animation: pulse 1.5s ease-in both infinite;
+  border-radius: 100%;
+  background-color: #25d366;
+}
+
+@keyframes appear {
+  from {
+    right: -100px;
+  }
+
+  to {
+    right: 30px;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(1.4);
+    opacity: 0;
+  }
+}
+
+.whatsappImg {
+  position: absolute;
+  right: 30px;
+  bottom: 20px;
+  width: 50px;
+  max-width: 50px;
+  z-index: 999;
+}
+
+@media (max-width: 767px) {
+  .whatsAppBtnContainer {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    cursor: pointer;
+    border-radius: 100%;
+  }
+
+  .whatsappImg {
+    right: 10px;
+    bottom: 60px;
+  }
+
+  .whatsappLayout {
+    right: 10px;
+    bottom: 60px;
+  }
+
+  @keyframes appear {
+    from {
+      right: -100px;
+    }
+
+    to {
+      right: 5px;
+    }
+  }
+}

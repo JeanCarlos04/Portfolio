@@ -1,18 +1,16 @@
 import { useContext } from "react";
 import { ThemeContext } from "../Context/ThemeContext";
-import { LanguageContext } from "../Context/LanguageContext";
-import { texts } from "../i18n/texts";
 import { frontendSkills, tools } from "../dataComponents/skills.data";
+import { useTranslation } from "react-i18next";
 
 export function Skills() {
-  const { language } = useContext(LanguageContext);
   const { theme } = useContext(ThemeContext);
-  const T = texts[language];
+  const { t } = useTranslation();
 
   return (
     <section className="sectionSkills">
       <h1 className="h1SectionTitle">
-        {T.home.tituloHabilidades}{" "}
+        {t("home.tituloHabilidades")}{" "}
         <img
           className="sectionTitleIcon"
           alt="Star Icon"
@@ -25,7 +23,7 @@ export function Skills() {
       </h1>
       <div className="divArticleContainer">
         <div className="titleSkillsContainer">
-          <h1 className="titleSkills">{T.skills.habilidadesFrontend}</h1>
+          <h1 className="titleSkills">{t("skills.habilidadesFrontend")}</h1>
           <article className="articleSkillContainer">
             {frontendSkills.map((skill) => {
               return (
@@ -41,7 +39,7 @@ export function Skills() {
           </article>
         </div>
         <div className="titleSkillsContainer">
-          <h1 className="titleSkills">{T.skills.herramientas}</h1>
+          <h1 className="titleSkills">{t("skills.herramientas")}</h1>
           <article className="articleSkillContainer">
             {tools.map((skill) => {
               return (
