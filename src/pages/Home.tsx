@@ -8,6 +8,7 @@ import { useTranslation } from "react-i18next";
 import { ThemeContext } from "../Context/ThemeContext";
 import i18n from "../config/i18next.config";
 import WhatsappBtn from "../Components/WhatsappBtn";
+import Anchor from "../Components/Anchor";
 
 export function Home() {
   const { t } = useTranslation();
@@ -18,13 +19,12 @@ export function Home() {
       <Nav />
       <section className="sectionPresentation">
         <img
-          src="/Portfolio/svg/FotoPersonal.webp"
+          src="/Portfolio/imgs/FotoPersonal.webp"
           alt="Image photo about me"
           className="imgProfile"
         />
         <div className="divPresentation">
           <h1 className="h1Name">Jean C. Castillo Fernández</h1>
-
           {i18n.language === "es" ? (
             <p className="paragraphPresentation">
               Ingeniero de software con
@@ -42,50 +42,37 @@ export function Home() {
           )}
 
           <div className="btnsDiv">
-            <a href="#footerSection" className="AnchorContact">
-              <img
-                className="gmailIcon"
-                alt="Gmail Logo"
-                src={
-                  theme === "light"
-                    ? "/Portfolio/svg/icons/gmail-Black.svg"
-                    : "/Portfolio/svg/icons/gmail-white.svg"
-                }
-              />
-              {t("home.botonContactame")}
-            </a>
-            <a
+            <Anchor
+              contentType="img"
+              href="#footerSection"
+              text={t("home.botonContactame")}
+              imgClass="gmailIcon"
+              imgAlt="Gmail Logo"
+              imgLightMode="/Portfolio/svg/icons/gmail-white.svg"
+              imgDarkMode="/Portfolio/svg/icons/gmail-Black.svg"
+            />
+
+            <Anchor
+              blank="_blank"
+              contentType="img"
               href="https://www.linkedin.com/in/jean-carlos-castillo-fernandez-76a95633b/"
-              target="_blank"
-              className="AnchorContact"
-            >
-              <img
-                className="anchorIcon"
-                alt="Linkedin Logo"
-                src={
-                  theme === "light"
-                    ? "/Portfolio/svg/icons/linkedinBlack.svg"
-                    : "/Portfolio/svg/icons/linkedinWhite.svg"
-                }
-              />
-              LinkendIn{" "}
-            </a>
-            <a
-              target="_blank"
+              text="LinkendIn"
+              imgClass="anchorIcon"
+              imgAlt="Linkedin Logo"
+              imgLightMode="/Portfolio/svg/icons/linkedinWhite.svg"
+              imgDarkMode="/Portfolio/svg/icons/linkedinBlack.svg"
+            />
+
+            <Anchor
+              blank="_blank"
+              contentType="img"
               href="https://github.com/JeanCarlos04"
-              className="AnchorContact"
-            >
-              <img
-                className="anchorIcon"
-                alt="Github Logo"
-                src={
-                  theme === "light"
-                    ? "/Portfolio/svg/icons/github.svg"
-                    : "/Portfolio/svg/icons/githubWhite.svg"
-                }
-              />
-              Github
-            </a>
+              text="Github"
+              imgClass="anchorIcon"
+              imgAlt="Github Logo"
+              imgLightMode="/Portfolio/svg/icons/githubWhite.svg"
+              imgDarkMode="/Portfolio/svg/icons/github.svg"
+            />
           </div>
         </div>
       </section>
@@ -150,7 +137,7 @@ export function Home() {
           <img
             className="AboutMeFoto"
             alt="An image about me"
-            src="/Portfolio/svg/AboutMeFoto.webp"
+            src="/Portfolio/imgs/AboutMeFoto.webp"
           />
         </div>
       </section>

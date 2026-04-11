@@ -12,6 +12,14 @@
     width: 100vw;
   }
 
+  .bigImgLayout {
+    padding-inline: 0% !important;
+  }
+
+  .showBigImg {
+    width: 85% !important;
+  }
+
   .btnDiv {
     position: absolute;
     width: auto;
@@ -37,12 +45,17 @@
     height: 16px;
   }
 
+  .navContainer {
+    width: 100%;
+  }
+
   .anchorDiv {
+    width: 100%;
     padding: 8px 13px 8px 13px;
     gap: 12px;
   }
 
-  .AnchorContact {
+  .anchorContact {
     font-size: 12px;
     font-weight: 600;
   }
@@ -89,10 +102,21 @@
     max-width: 180px;
   }
 
+  .skillsDiv {
+    width: fit-content;
+    background-color: rgb(31, 29, 34);
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    border-radius: 10px;
+    padding-inline: 16px;
+    padding-block: 8px;
+    border: solid 1px #444343;
+  }
+
   .divArticleContainer {
     display: flex;
-    flex-direction: column;
-    gap: 40px;
+    gap: 20px;
   }
 
   .divAboutMe {
@@ -127,10 +151,19 @@
   }
 }
 
+/* SMALL MOBILE DESIGN */
+
+@media (width < 375px) {
+  .anchorNav {
+    font-size: 10px;
+  }
+}
+
 /*TABLETS DESIGN*/
 
 @media (min-width: 768px) and (max-width: 1023px) {
   main {
+    width: screen;
     padding-left: 50px;
     padding-right: 50px;
   }
@@ -156,17 +189,26 @@
     flex-direction: column;
   }
 
+  .projectImgs {
+    width: 100%;
+  }
+
   .divPresentation {
     align-items: center;
   }
 
+  .bigImgLayout {
+    padding-inline: 0% !important;
+  }
+
   .divprojects {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .articleprojects {
-    flex-direction: row;
+    width: 100%;
+    flex-direction: column;
     height: auto;
   }
 

@@ -19,13 +19,6 @@
   font-display: swap;
 }
 
-@font-face {
-  font-family: Poppins;
-  src: url("/fonts/poppins700.woff2") format("woff2");
-  font-weight: 700;
-  font-display: swap;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -39,7 +32,7 @@ body.light {
 }
 
 body.dark {
-  background-image: linear-gradient(rgb(4, 6, 15), rgb(15, 14, 34));
+  background-image: linear-gradient(rgb(4, 6, 15), rgb(17, 16, 23));
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;

@@ -41,7 +41,7 @@ export function Nav() {
         >
           {" "}
           <img
-            className="sectionTitleIcon"
+            className="sectionTitleIcon themeMode"
             alt="Moon icon"
             src={
               theme === "light"
@@ -64,8 +64,8 @@ export function Nav() {
             alt={i18n.language === "es" ? "Spain flag" : "United States flag"}
             src={
               i18n.language === "es"
-                ? "/Portfolio/svg/SpainFlag.webp"
-                : "/Portfolio/svg/USA.webp"
+                ? "/Portfolio/imgs/SpainFlag.webp"
+                : "/Portfolio/imgs/USA.webp"
             }
           />
         </button>

@@ -6,7 +6,11 @@ function WhatsappBtn() {
     >
       <div className="whatsAppBtnContainer">
         <div className="whatsappLayout" />
-        <img className="whatsappImg" src="/Portfolio/svg/WS.webp" />
+        <img
+          className="whatsappImg"
+          src="/Portfolio/imgs/WS.webp"
+          alt="What'sApp logo"
+        />
       </div>
     </a>
   );
