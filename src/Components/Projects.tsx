@@ -1,12 +1,17 @@
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { ThemeContext } from "../Context/ThemeContext";
 import { projects } from "../dataComponents/projects.data.ts";
 import { useTranslation } from "react-i18next";
 import i18n from "../config/i18next.config.ts";
+import EnlargeImg from "./EnlargeImg.tsx";
+import Anchor from "./Anchor.tsx";
+
+export type EnlargeImgType = { name: string; src: string }[];
 
 export function Projects() {
   const { theme } = useContext(ThemeContext);
   const { t } = useTranslation();
+  const [enlargeImg, setEnlargeImg] = useState<EnlargeImgType>([]);
 
   return (
     <section id="sectionProjects" className="sectionContainer">
@@ -22,6 +27,7 @@ export function Projects() {
           }
         />
       </h1>
+
       <div className="divprojects">
         {projects.map((project, index) => {
           return (
@@ -30,9 +36,10 @@ export function Projects() {
               className={`articleprojects ${index == 2 ? "span-2" : ""}`}
             >
               <div className="projectImgDiv">
-                {project.img?.map((imgs) => {
+                {project.img?.slice(0, 1).map((imgs) => {
                   return (
                     <img
+                      onClick={() => setEnlargeImg(project.img)}
                       key={imgs.name}
                       src={imgs.src}
                       alt={imgs.name}
@@ -44,22 +51,16 @@ export function Projects() {
               <div className="divProjectInfoContainer">
                 <div className="divTitle-Btn">
                   <h2 className="projectTitle">{project.title}</h2>
-                  <a
-                    target="_blank"
+                  <Anchor
+                    contentType="img"
+                    blank="_blank"
                     href={project.code}
-                    className="projectAnchorCode"
-                  >
-                    <img
-                      className="anchorProjectIcon"
-                      alt="Github Logo"
-                      src={
-                        theme === "light"
-                          ? "/Portfolio/svg/icons/github.svg"
-                          : "/Portfolio/svg/icons/githubWhite.svg"
-                      }
-                    />
-                    Code
-                  </a>
+                    imgClass="anchorProjectIcon"
+                    imgAlt="Github Logo"
+                    imgDarkMode="/Portfolio/svg/icons/github.svg"
+                    imgLightMode="/Portfolio/svg/icons/githubWhite.svg"
+                    text="Code"
+                  />
                 </div>
                 {i18n.language === "es" ? (
                   <p className="projectDescription">{project.description}</p>
@@ -87,6 +88,7 @@ export function Projects() {
           );
         })}
       </div>
+      <EnlargeImg setEnlargedImg={setEnlargeImg} enlargedImage={enlargeImg} />
     </section>
   );
 }

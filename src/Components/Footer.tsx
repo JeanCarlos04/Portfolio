@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import { ThemeContext } from "../Context/ThemeContext";
 import { useTranslation } from "react-i18next";
+import Anchor from "./Anchor";
 
 export function Footer() {
   const { theme } = useContext(ThemeContext);
@@ -27,42 +28,35 @@ export function Footer() {
             />
           </h2>
           <div className="divContact">
-            <a
-              href="https://www.linkedin.com/in/jean-carlos-castillo-fernández-76a95633b/"
-              target="_blank"
-              className="AnchorContactFooter"
-            >
-              <img
-                className="anchorIcon"
-                alt="Linkedin Logo"
-                src={
-                  theme === "light"
-                    ? "/Portfolio/svg/icons/linkedinBlack.svg"
-                    : "/Portfolio/svg/icons/linkedinWhite.svg"
-                }
-              />
-              LinkendIn
-            </a>
-            <a
-              target="_blank"
+            <Anchor
+              blank="_blank"
+              contentType="img"
+              href="https://www.linkedin.com/in/jean-carlos-castillo-fernandez-76a95633b/"
+              text="LinkendIn"
+              imgClass="anchorIcon"
+              imgAlt="Linkedin Logo"
+              imgLightMode="/Portfolio/svg/icons/linkedinWhite.svg"
+              imgDarkMode="/Portfolio/svg/icons/linkedinBlack.svg"
+            />
+
+            <Anchor
+              blank="_blank"
+              contentType="img"
               href="https://github.com/JeanCarlos04"
-              className="AnchorContactFooter"
-            >
-              <img
-                className="anchorIcon"
-                alt="Linkedin Logo"
-                src={
-                  theme === "light"
-                    ? "/Portfolio/svg/icons/github.svg"
-                    : "/Portfolio/svg/icons/githubWhite.svg"
-                }
-              />
-              Github
-            </a>
+              text="Github"
+              imgClass="anchorIcon"
+              imgAlt="Github Logo"
+              imgLightMode="/Portfolio/svg/icons/githubWhite.svg"
+              imgDarkMode="/Portfolio/svg/icons/github.svg"
+            />
           </div>
           <address className="divInfoContact">
-            <p>jeancarloscastillofernandez@gmail.com</p>
-            <p>+1 829 749 0064</p>
+            <p className="footerTelephone">
+              {/*<FaEnvelope />*/} jeancarloscastillofernandez@gmail.com
+            </p>
+            <p className="footerTelephone">
+              {/*<FaPhone /> */} +1 829 749 0064
+            </p>
           </address>
         </nav>
         <div className="divMadedWith">

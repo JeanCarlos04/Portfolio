@@ -31,6 +31,11 @@ main .navContainer {
   height: 27px;
 }
 
+.sectionTitleIcon.themeMode {
+  width: 24px;
+  height: 24px;
+}
+
 .divPresentation {
   display: flex;
   flex-direction: column;
@@ -57,7 +62,7 @@ main .navContainer {
 
 .paragraphSpan {
   color: #faeb64;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .btnsDiv {
@@ -67,15 +72,15 @@ main .navContainer {
 
 .anchorIcon,
 .gmailIcon {
-  width: 20px;
-  height: 20px;
+  width: 18px;
+  height: 18px;
 }
 
-.AnchorContact {
+.anchorContact {
   display: flex;
   align-items: center;
   gap: 9px;
-  border-radius: 55px;
+  border-radius: 9px;
   background-color: rgb(33, 40, 61);
   border-style: none;
   border: solid 1px #444343;
@@ -90,9 +95,8 @@ main .navContainer {
   will-change: transform;
 }
 
-.AnchorContact:hover {
-  background-color: #1f3d70;
-  transform: scale(1.1);
+.anchorContact:hover {
+  background-color: rgb(16, 114, 185);
 }
 
 .sectionContainer {
@@ -104,12 +108,6 @@ main .navContainer {
   justify-content: center;
   align-items: center;
   gap: 25px;
-}
-
-.sectionContainer .h1SectionTitle {
-  display: flex;
-  width: 100%;
-  justify-content: start;
 }
 
 .h1SectionTitle {
@@ -159,6 +157,7 @@ main .navContainer {
   width: 400px;
   height: auto;
   border-radius: 12px;
+  cursor: pointer;
 }
 
 .projectTitle {
@@ -188,7 +187,7 @@ main .navContainer {
   text-decoration: none;
   align-items: center;
   gap: 9px;
-  border-radius: 55px;
+  border-radius: 8px;
   background-color: rgb(33, 40, 61);
   border-style: none;
   border: solid 1px #444343;
@@ -203,7 +202,6 @@ main .navContainer {
 
 .projectAnchorCode:hover {
   background-color: #1f3d70;
-  transform: scale(1.1);
 }
 
 .projectDescription {
@@ -252,13 +250,14 @@ main .navContainer {
   font-size: 16px;
   line-height: 1.8;
   padding: 12px;
-  background-color: #1e1d24;
+  background-color: rgb(31, 29, 34);
   border-radius: 10px;
+  transition: 0.5s;
 }
 
 .spanAboutMe {
   color: #faeb64;
-  font-weight: 700;
+  font-weight: 600;
   text-align: left;
 }
 
@@ -274,7 +273,9 @@ main .navContainer {
 }
 
 .divArticleContainer {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 50px;
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
 }

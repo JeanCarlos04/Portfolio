@@ -14,13 +14,14 @@
 }
 
 .p-Experience {
-  font-size: 20px;
-  font-weight: 400;
+  color: #cecece;
+  font-size: 18px;
+  font-weight: 500;
 }
 
 @media (max-width: 767px) {
   .p-Experience {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   .liExperience {

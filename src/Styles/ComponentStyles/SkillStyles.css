@@ -27,9 +27,25 @@
   border: solid 2px #393939;
 }
 
+.skillsDiv {
+  width: fit-content;
+  background-color: rgb(31, 29, 34);
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  border-radius: 10px;
+  padding-inline: 16px;
+  padding-block: 8px;
+  border: solid 1px #444343;
+}
+
+.skillsTitle {
+  font-weight: 500;
+}
+
 .logoSkills {
-  width: 45px;
-  height: 45px;
+  width: 24px;
+  height: 24px;
   display: flex;
   justify-content: center;
   transition: 0.3s;

@@ -6,7 +6,7 @@ type Skills = {
   alt: string;
 };
 
-export const frontendSkills: Skills[] = [
+export const skills: Skills[] = [
   {
     id: crypto.randomUUID(),
     src: "/Portfolio/svg/icons/react.svg",
@@ -61,9 +61,6 @@ export const frontendSkills: Skills[] = [
     color: "#336791",
     alt: "PostgreSQL",
   },
-];
-
-export const tools: Skills[] = [
   {
     id: crypto.randomUUID(),
     src: "/Portfolio/svg/icons/vs-code.svg",
@@ -91,8 +88,19 @@ export const tools: Skills[] = [
   {
     id: crypto.randomUUID(),
     src: "/Portfolio/svg/icons/github.svg",
-    srcOtherColor: "/Portfolio/svg/icons/githubWhite.svg",
     color: "#ffffff",
     alt: "GitHub",
+  },
+  {
+    id: crypto.randomUUID(),
+    src: "/Portfolio/svg/icons/postmanIcon.svg",
+    color: "#FF6C37",
+    alt: "Postman",
+  },
+  {
+    id: crypto.randomUUID(),
+    src: "/Portfolio/svg/icons/jwtIcon.svg",
+    color: "#FF6C37",
+    alt: "JWT",
   },
 ];

@@ -70,17 +70,22 @@ body.light {
     color: var(--text);
   }
 
+  .skillsDiv {
+    background-color: rgb(233, 237, 251);
+    border: solid 1px var(--borders-btn);
+  }
+
   .paragraphSpan {
     color: var(--details-color);
   }
 
-  .AnchorContact {
+  .anchorContact {
     background-color: var(--nav-bg);
     border: solid 1px var(--borders-btn);
     color: var(--text);
   }
 
-  .AnchorContact:hover {
+  .anchorContact:hover {
     background-color: var(--btns-backgroud);
   }
 
@@ -102,7 +107,7 @@ body.light {
   }
 
   .projectAnchorCode {
-    background-color: var(--white);
+    background-color: var(--nav-bg);
     border: solid 1px var(--borders-btn);
     color: var(--text);
   }
@@ -155,16 +160,6 @@ body.light {
 
   .contactH1 {
     color: var(--text);
-  }
-
-  .AnchorContactFooter {
-    background-color: var(--nav-bg);
-    border: solid 1px var(--borders-btn);
-    color: var(--text);
-  }
-
-  .AnchorContactFooter:hover {
-    background-color: var(--btns-backgroud);
   }
 
   .copyright-p {
