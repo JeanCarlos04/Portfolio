@@ -25,13 +25,29 @@ export function Experience() {
       <ul className="ulExperience">
         {experience.map((descriptions) => {
           return (
-            <li className="liExperience" key={descriptions.id}>
-              {i18n.language === "es" ? (
-                <p className="p-Experience">{descriptions.text}</p>
-              ) : (
-                <p className="p-Experience">{descriptions.textEN}</p>
+            
+            <div className="liExperienceContainer">
+              {descriptions != experience[0] && ( 
+                <div className="experienceLineContainer">
+                  <div className="experiencieLineDot"></div>
+                  <div className="experienceLine"></div >
+                  <div className="experiencieLineDot"></div>
+                </div>
               )}
-            </li>
+             
+              <li className="liExperience" key={descriptions.id}>
+                <div className="liDateContainer">
+                <p className="liInitialDate">{descriptions.fechaInicio}</p>
+                {descriptions.fechaFinal ? "/" : null}  
+                <p className="liEndDate">{descriptions.fechaFinal}</p></div>
+                {i18n.language === "es" ? (
+                  <p className="p-Experience">{descriptions.text}</p>
+                ) : (
+                  <p className="p-Experience">{descriptions.textEN}</p>
+                )}
+              </li>
+            </div>
+            
           );
         })}
       </ul>
