@@ -97,40 +97,36 @@ export function Home() {
         <div className="divAboutMe">
           {i18n.language === "es" ? (
             <p className="p-aboutMe">
-              Me llamo Jean Carlos Castillo Fernández,
+              Jean Carlos Castillo Fernández,
               <span className="spanAboutMe">
                 {" "}
-                estudiante de ingeniería de software
+                estudiante de Ingeniería de Software
               </span>{" "}
-              en el Instituto Técnologico de las Americas ITLA . Me especializo
+              en el Instituto Técnologico de las Americas ITLA. Especializado
               en el{" "}
               <span className="spanAboutMe">
-                desarrollo de aplicaciones web, con 2 años de experiencia
+                desarrollo de aplicaciones web, con 3 años de experiencia
               </span>{" "}
-              en dicha área.
+              en el área.
               <br />
               <br />
-              Soy una persona amante y curiosa por las nuevas tecnologías, con
-              una mente creativa y llena de ganas de seguir desarrollando webs
-              creativas e innovadoras, así como también continuar
-              desarrollandome en el área y aplicar todas mis habilidades y
-              conocimientos.
+              Apasionado por las nuevas tecnologías, con una mentalidad creativa y orientada a la innovación. Mi objetivo es continuar fortaleciendo mis conocimientos y habilidades, desarrollando soluciones web modernas, seguras y eficientes, mientras aporto valor en cada proyecto en el que participo.
             </p>
           ) : (
             <p className="p-aboutMe">
-              My name is Jean Carlos Castillo Fernández,{" "}
-              <span className="spanAboutMe">software engineering student</span>{" "}
-              at the Instituto Tecnológico de las Americas ITLA. I specialize in{" "}
+              Jean Carlos Castillo Fernández,
               <span className="spanAboutMe">
-                web application development, with 2 years of experience
+                {" "}
+                Software Engineering student
               </span>{" "}
-              in this field.
+              at the Instituto Tecnológico de las Américas (ITLA). I specialize in{" "}
+              <span className="spanAboutMe">
+                web application development, with 3 years of experience
+              </span>{" "}
+              in the field.
               <br />
-              <br />I am a person who loves and is curious about new
-              technologies, with a creative mind and a strong desire to continue
-              developing creative and innovative websites, as well as further
-              developing myself in the field and applying all my skills and
-              knowledge.
+              <br />
+              I am passionate about new technologies, with a creative mindset and a strong focus on innovation. My goal is to continue strengthening my knowledge and skills, developing modern, secure, and efficient web solutions, while contributing value to every project I take part in.
             </p>
           )}
 
